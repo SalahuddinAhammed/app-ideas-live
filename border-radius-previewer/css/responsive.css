@@ -1,0 +1,10 @@
+/* Mobile: 768px */
+@media (max-width: 48rem) {
+  html {
+    font-size: 58.5%;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+}

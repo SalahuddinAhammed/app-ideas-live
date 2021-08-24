@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./border-radius.svg" rel="shortcut icon" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/responsive.css" rel="stylesheet" />
+    <title>Border Radius Previewer - App Ideas</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="site-branding">Border Radius Previewer</h1>
+    </header>
+    <main>
+      <div class="preview" data-input-preview="top-left" id="previewEl"></div>
+      <div class="inputs">
+        <div class="input-group">
+          <label for="inputTopLeft">Top left</label>
+          <input id="inputTopLeft" max="12" type="number" />
+        </div>
+        <div class="input-group">
+          <label for="inputTopRight">Top right</label>
+          <input id="inputTopRight" type="number" />
+        </div>
+        <div class="input-group">
+          <label for="inputBottomRight">Bottom right</label>
+          <input id="inputBottomRight" type="number" />
+        </div>
+        <div class="input-group">
+          <label for="inputBottomLeft">Bottom left</label>
+          <input id="inputBottomLeft" type="number" />
+        </div>
+      </div>
+      <div class="code-wrapper">
+        <textarea class="code" id="codeEl" readonly>
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;</textarea
+        >
+        <button class="copy-btn" id="btnCopy">
+          <svg
+            class="copy-btn-icon"
+            fill="none"
+            id="btnIconClipboard"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+
+          <svg
+            class="copy-btn-icon hidden"
+            fill="none"
+            id="btnIconCheck"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 13l4 4L19 7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+    </main>
+    <footer>
+      Code by
+      <a href="https://github.com/SalahuddinAhammed">Salahudin Ahammed</a>.
+      Inspire from
+      <a href="https://github.com/florinpop17/app-ideas">App Ideas</a>.
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
