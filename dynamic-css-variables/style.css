@@ -1,0 +1,137 @@
+:root {
+  --color-input-bg: #fbfbfb;
+  --color-primary: #1c7ed6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  background-color: var(--color-input-bg);
+  border: 1px solid #bcccd4;
+  border-radius: 0.3rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  outline: 0;
+  padding: 1.3rem 1rem;
+}
+
+input:active,
+input:focus {
+  background-color: #fff;
+  box-shadow: inset 0 0 0 0.1rem var(--color-primary);
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.login {
+  background-color: #fff;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 3.5rem rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin: 4rem 0;
+  max-width: 33rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.title {
+  color: #393e41;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 2.4rem 0;
+  text-align: center;
+}
+
+.button-group {
+  align-items: center;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: space-around;
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 500;
+  outline: 0;
+  padding: 1.2rem 2.4rem;
+}
+
+.btn:active,
+.btn:focus {
+  border: 1px solid var(--color-primary);
+}
+
+.btn--login {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: #fa5252;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: -1.8rem;
+  text-align: right;
+}
+
+.success-message {
+  color: #69db7c;
+  font-size: 2.4rem;
+}
+
+footer {
+  background-color: #e5e7eb;
+  bottom: 0;
+  font-size: 1.6rem;
+  left: 0;
+  padding: 2rem;
+  position: fixed;
+  right: 0;
+  text-align: center;
+}
+
+.attribution-link:link,
+.attribution-link:visited {
+  border-bottom: 1px solid currentColor;
+  color: var(--color-primary);
+  text-decoration: none;
+}
