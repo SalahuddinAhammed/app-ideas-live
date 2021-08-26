@@ -7,4 +7,9 @@
 ## 26 August, 2021
 
 ### New
+
 - Add project: Dynamic CSS Variables
+
+### Fix
+
+- Missing README for Dynamic CSS Variables
