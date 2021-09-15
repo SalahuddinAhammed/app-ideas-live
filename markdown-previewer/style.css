@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;700&display=swap");
+
+:root {
+  --color-primary: #7950f2;
+  --color-gray: #e9ecef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  margin-left: 1rem;
+}
+
+.container {
+  max-width: 75rem;
+  width: 100%;
+  padding: 0 1.6rem;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 1.5rem auto;
+}
+
+.site-branding {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem;
+  font-weight: 700;
+}
+
+.highlight {
+  color: var(--color-primary);
+}
+
+.user-input-wrapper {
+  position: relative;
+}
+
+.user-input {
+  width: 100%;
+  height: 100%;
+  outline: 0;
+  resize: none;
+  border: 2px solid var(--color-gray);
+  font-family: "Fira Code", monospace;
+  line-height: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.user-input:active,
+.user-input:focus {
+  border: 2px solid var(--color-primary);
+}
+
+.markdown-preview {
+  line-height: 1.7;
+  background-color: var(--color-gray);
+  border-radius: 0.5rem;
+}
+
+.user-input,
+.markdown-preview {
+  padding: 2.5rem;
+}
+
+.copy {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.copy-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.attribution {
+  background-color: #e5e7eb;
+  font-size: 0.875rem;
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.attribution-link:link,
+.attribution-link:visited {
+  padding: 2px;
+  border-bottom: 1px solid currentColor;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+@media (max-width: 48em) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
